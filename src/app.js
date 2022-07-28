@@ -44,13 +44,13 @@ app.get('/form', (req, res) => {
         if (isLuckyDay) {
             return res.send({
                 status: "Success",
-                message: "Данный формы приняты успешно",
+                message: "Данныe формы приняты успешно",
             });
         }
 
         return res.send({
             status: "Error",
-            message: "Данный формы не приняты",
+            message: "Данныe формы не приняты, пропробуйте еще раз",
         });
     }, 2000);
 });
