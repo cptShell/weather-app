@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    all: unset;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 800px;
+    min-height: 100vh;
+    flex-shrink: 0;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-item > a {
+    font-size: 16px;
+    text-decoration: none;
+    color:  rgba(00, 00, 00, 0.7);
+    transition: all ease 0.2s;
+    border-bottom: 2px solid rgba(00, 00, 00, 0);
+}
+
+.nav-item > a:hover {
+    color: rgb(106, 37, 170);
+    border-bottom: 2px solid rgb(106, 37, 170);
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.author {
+    font-size: 14px;
+    text-decoration: none;
+    color:  rgb(66, 66, 66);
+    transition: all ease 0.2s;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 16px 16px;
+    gap: 30px;
+    flex: 1 0 auto;
+}
+
+.search-bar {
+    width: 100%;
+    display: flex;
+    max-width: 420px;
+    border: 3px solid rgb(106, 37, 170);
+    border-radius: 50em;
+}
+
+.search-input {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    padding: 5px;
+    border-radius: 50em 0 0 50em;
+}
+.search-input::selection {
+    background: transparent;
+}
+
+
+.search-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 5px;
+    color: rgb(106, 37, 170);
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    width: 100%;
+    background: grey;
+}
+
+.forecast-container {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding-bottom: 30px;
+}
+
+.forecast-title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.forecast-description {
+    font-size: 20px;
+    font-weight: 300;
+}
